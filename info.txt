@@ -1,0 +1,10 @@
+Colors:
+
+body - #0b2545
+.game - #13315c
+.box - #8da9c4
+h1 - #eef4ed
+.count - #eef4ed
+#winMsg - #ff8600
+x - #d62828
+o - #003049

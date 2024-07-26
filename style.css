@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Russo+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+}
+
+body {
+  /* background-color: #f1faee; */
+  background-color: #0b2545;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 875px;
+}
+
+.gameContainer {
+  width: 100%;
+}
+
+.game {
+  background-color: #13315c;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  width: fit-content;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #8da9c4;
+  font-size: 60px;
+  color: #003049;
+}
+
+.box:hover {
+  filter: drop-shadow(0px 0px 3px #2c7da0);
+}
+
+.info {
+  width: 100%;
+}
+
+h1 {
+  color: #eef4ed;
+}
+
+.count {
+  color: #eef4ed;
+}
+
+.Msg {
+  color: #ff8600;
+  margin: 25px auto
+}
+
+.hide {
+  display: none;
+}
+
+.notHide{
+  display: block;
+}
+
+.gameBtn{
+  margin: 25px 10px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #13315e;
+  color: #eef4ed;
+}
+
+.gameBtn:hover {
+  filter: drop-shadow(0px 0px 3px #2c7da0);
+}
+
+@media (max-width: 916px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .gameContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 384px) {
+  .box {
+    width: 90px;
+    height: 90px;
+  }
+
+  #winMsg {
+    width: min-content;
+  }
+}
